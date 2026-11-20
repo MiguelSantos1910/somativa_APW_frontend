@@ -80,8 +80,3 @@ src/
   components/            BotaoBase, CampoTexto, CartaoAuth, CartaoFilme, IconeBase
 e2e/                     testes Playwright
 ```
-
-## Branches
-
-- `master`: versão estável (produção)
-- `dev`: desenvolvimento
