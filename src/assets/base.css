@@ -1,0 +1,88 @@
+:root {
+  --color-bg: #070b16;
+  --color-bg-elevated: #0e1526;
+  --color-text: #e6ebf5;
+  --color-text-muted: #94a0b8;
+  --color-heading: #ffffff;
+  --color-primary: #3b82f6;
+  --color-primary-strong: #2563eb;
+  --color-danger: #ef4444;
+  --color-success: #22c55e;
+  --color-star: #facc15;
+  --color-heart: #f43f5e;
+
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  --gradient-page:
+    radial-gradient(ellipse at 15% 0%, rgba(59, 130, 246, 0.22), transparent 55%),
+    radial-gradient(ellipse at 90% 10%, rgba(99, 102, 241, 0.18), transparent 50%),
+    var(--color-bg);
+
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-bg-strong: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-blur: blur(14px);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--gradient-page);
+  background-attachment: fixed;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
